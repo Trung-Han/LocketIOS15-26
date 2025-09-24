@@ -1,0 +1,17 @@
+#!name=Locket Gold 🏅- Phan Trọng Phúc
+#!desc=Mở khoá premium cho ứng dụng Locket Widget 
+# 🚀 Released by: Loket Gold By Phan Trọng Phúc 
+#!version= 6
+
+[General]
+user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
+
+[Script]
+
+# ~ Enhanced for Shadowrocket, Surge, & LanceX
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/Locket_fix.js, requires-body=true, max-size=-1, timeout=120
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/deleteHeader.js, timeout=120
+
+[MITM]
+hostname = api.revenuecat.com, raw.githubusercontent.com
+# 👤 Author: PHAN TRỌNG PHÚC
