@@ -1,7 +1,7 @@
 #!name=Locket Gold 🏅- Phan Trọng Phúc
 #!desc=Mở khoá premium cho ứng dụng Locket Widget 
 # 🚀 Released by: Loket Gold By Phan Trọng Phúc 
-#!version= 6
+#!version= 8
 
 [General]
 user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
