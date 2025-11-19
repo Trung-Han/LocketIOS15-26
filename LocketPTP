@@ -7,11 +7,12 @@
 user-agent = Locket/1.0.0 (iPhone; iOS 26; Scale/3.00)
 
 [Script]
+# ~ By DVSTEAM
+# ï½ž Egern transfer to Shadowrocket & Surge & LanceX
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://api.dvsteam.vn/Locket_Gold/Shadowrocket/js/Locket_DVSTEAM.js, requires-body=true, max-size=-1, timeout=60
 
-# ~ Enhanced for Shadowrocket, Surge, & LanceX
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/locketfix1.js, requires-body=true, max-size=-1, timeout=120
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.*\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/NightmarketServer/Locket/refs/heads/main/header.js, timeout=120
+deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://api.dvsteam.vn/Locket_Gold/Shadowrocket/js/setHeader.js, timeout=60
 
 [MITM]
-hostname = api.revenuecat.com, raw.githubusercontent.com
+hostname = %APPEND% api.revenuecat.com
 # 👤 Author: PHAN TRỌNG PHÚC
